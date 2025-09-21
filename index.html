@@ -4,19 +4,108 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Chintsogt Enkhbaatar — Resume</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --text: #111827;
+      --muted: #6b7280;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header.hero {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    header.hero h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    header.hero .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    header.hero .contact a {
+      color: #bfdbfe;
+      text-decoration: underline;
+    }
+    main.container {
+      max-width: 900px;
+      margin: -2rem auto 3rem;
+      padding: 2rem;
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+    section { margin-bottom: 2rem; }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+    ul { list-style: none; padding-left: 0; }
+    ul li {
+      background: #f3f4f6;
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.5rem;
+      border-radius: 8px;
+    }
+    article {
+      background: #f3f4f6;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .skills span {
+      background: #e0e7ff;
+      color: #1e3a8a;
+      padding: 0.4rem 0.8rem;
+      border-radius: 9999px;
+      font-size: 0.9rem;
+    }
+    a { color: var(--primary-dark); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer.footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
   <header class="hero">
     <h1>Chintsogt Enkhbaatar</h1>
     <p class="subtitle">Associate Professor • AI & Cloud • Taichung</p>
-    <p class="contact">Email: Chintsogt0825@gmail.com · GitHub: <a href="https://github.com/Chintsogt0825">Chintsogt0825</a></p>
+    <p class="contact">Email: Chintsogt0825@gmail.com · GitHub: 
+      <a href="https://github.com/Chintsogt0825">Chintsogt0825</a>
+    </p>
   </header>
 
   <main class="container">
     <section>
       <h2>Profile</h2>
-      <p>Motivated computer science student with hands-on experience in artificial intelligence, cloud computing, and data analysis. Skilled in Python, machine learning, and web development, with a strong interest in applying technology to solve real-world problems.</p>
+      <p>
+        Motivated computer science student with hands-on experience in artificial intelligence, 
+        cloud computing, and data analysis. Skilled in Python, machine learning, and web development, 
+        with a strong interest in applying technology to solve real-world problems.
+      </p>
     </section>
 
     <section>
@@ -30,20 +119,27 @@
       <h2>Experience</h2>
       <article>
         <h3>Associate Professor — Asia University</h3>
-        <p>Dates — Teaching Artificial Intelligence and Cloud Applications; research; projects.</p>
+        <p><em>Dates</em> — Teaching Artificial Intelligence and Cloud Applications; research; projects.</p>
       </article>
     </section>
 
     <section>
       <h2>Skills</h2>
-      <p>Python · ML · Git · Docker · Cloud · HTML/CSS</p>
+      <div class="skills">
+        <span>Python</span>
+        <span>Machine Learning</span>
+        <span>Git</span>
+        <span>Docker</span>
+        <span>Cloud</span>
+        <span>HTML/CSS</span>
+      </div>
     </section>
 
     <section>
       <h2>Projects & Links</h2>
       <ul>
         <li><a href="#">Monica AI — YouTube project</a></li>
-        <li><a href="#">GitHub: github.com/yourusername</a></li>
+        <li><a href="https://github.com/Chintsogt0825">GitHub: Chintsogt0825</a></li>
       </ul>
     </section>
   </main>
