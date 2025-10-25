@@ -21,7 +21,7 @@ body{
 a{color:var(--accent-dark);text-decoration:none}
 a:hover{text-decoration:underline}
 
-/* ===== Top-left ID badge (no image now) ===== */
+/* ===== Top-left ID badge (no image) ===== */
 .id-badge{
   position:fixed; top:16px; left:16px; z-index:20;
   display:flex; flex-direction:column; align-items:flex-start;
@@ -40,28 +40,27 @@ a:hover{text-decoration:underline}
   padding:88px 20px 44px;
 }
 
-/* Circular photo above H1 */
+/* === Circular photo above H1 === */
 header.hero img.avatar-circle {
-  width:85px !important;          /* force the size */
+  width:85px !important;
   height:85px !important;
-  aspect-ratio:1 / 1;             /* keep it square even if the file isn't */
-  border-radius:9999px !important;/* perfect circle */
-  object-fit:cover;               /* crop to circle */
-  object-position:center;
-  display:block;
-  margin:0 auto 14px auto;        /* center above name */
-  border:3px solid var(--accent);
-  box-shadow:0 4px 12px rgba(2,8,23,.15);
+  max-width:none !important;
+  aspect-ratio:1 / 1 !important;
+  border-radius:9999px !important;
+  object-fit:cover !important;
+  object-position:center !important;
+  display:block !important;
+  margin:0 auto 14px auto !important;
+  border:3px solid var(--accent) !important;
+  box-shadow:0 4px 12px rgba(2,8,23,.15) !important;
 }
+
 @media (max-width:480px){
   header.hero img.avatar-circle{
     width:72px !important;
     height:72px !important;
   }
 }
-
-
-
 
 .hero h1{
   font-size:32px; font-weight:800; letter-spacing:.2px;
