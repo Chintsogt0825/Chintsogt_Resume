@@ -57,8 +57,8 @@ header.hero img.avatar-circle {
 
 @media (max-width:480px){
   header.hero img.avatar-circle{
-    width:72px !important;
-    height:72px !important;
+    width:150px !important;
+    height:150px !important;
   }
 }
 
