@@ -42,8 +42,8 @@ a:hover{text-decoration:underline}
 
 /* === Circular photo above H1 === */
 header.hero img.avatar-circle {
-  width:85px !important;
-  height:85px !important;
+  width:150px !important;
+  height:150px !important;
   max-width:none !important;
   aspect-ratio:1 / 1 !important;
   border-radius:9999px !important;
