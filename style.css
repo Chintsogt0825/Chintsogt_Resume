@@ -41,16 +41,25 @@ a:hover{text-decoration:underline}
 }
 
 /* Circular photo above H1 */
-.avatar-circle {
-  width:85px;              /* smaller, balanced size */
-  height:85px;
-  border-radius:50%;       /* makes it a perfect circle */
-  object-fit:cover;        /* crops inside the circle neatly */
+header.hero img.avatar-circle {
+  width:85px !important;          /* force the size */
+  height:85px !important;
+  aspect-ratio:1 / 1;             /* keep it square even if the file isn't */
+  border-radius:9999px !important;/* perfect circle */
+  object-fit:cover;               /* crop to circle */
+  object-position:center;
   display:block;
-  margin:0 auto 14px auto; /* centers it above your name */
-  border:3px solid var(--accent); /* nice blue border */
+  margin:0 auto 14px auto;        /* center above name */
+  border:3px solid var(--accent);
   box-shadow:0 4px 12px rgba(2,8,23,.15);
 }
+@media (max-width:480px){
+  header.hero img.avatar-circle{
+    width:72px !important;
+    height:72px !important;
+  }
+}
+
 
 
 
