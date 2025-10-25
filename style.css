@@ -1,11 +1,115 @@
-:root{--bg:#f8fafc;--card:#ffffff;--muted:#6b7280}
-*{box-sizing:border-box}
-body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#111;background:var(--bg);margin:0}
-.hero{background:#0f172a;color:#fff;padding:40px 20px;text-align:center}
-.container{max-width:900px;margin:-30px auto 60px;padding:28px;background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.08)}
-h1{margin:0;font-size:28px}
-.subtitle{margin:6px 0;color:var(--muted)}
-section{margin-bottom:18px}
-h2{font-size:18px;margin-bottom:8px}
-.footer{text-align:center;color:var(--muted);padding:20px 0}
-a{color:#0b5fff;text-decoration:none}
+:root{
+  --bg:#f9fafb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --text:#0f172a;
+  --primary:#2563eb;
+  --primary-dark:#1d4ed8;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+a{color:var(--primary-dark);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* === ID Badge === */
+.id-badge{
+  position:fixed; top:16px; left:16px; z-index:10;
+  background:#fff; border:1px solid #e5e7eb; border-radius:12px;
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+  display:flex; align-items:center; gap:12px; padding:10px 12px;
+}
+.id-badge .avatar{
+  width:44px; height:44px; border-radius:8px; object-fit:cover;
+  border:1px solid #e5e7eb;
+}
+.id-badge .who{display:flex;flex-direction:column}
+.id-badge .name{font-weight:700;font-size:14px;line-height:1.2}
+.id-badge .sid{font-size:12px;color:#334155}
+
+/* === Header === */
+header.hero{
+  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+  color:#fff;
+  text-align:center;
+  padding:88px 20px 56px;
+}
+header.hero h1{font-size:34px;font-weight:800;letter-spacing:.2px}
+header .subtitle{opacity:.95;margin-top:6px}
+header .contact{margin-top:10px;font-size:15px}
+header .contact a{color:#bfdbfe;text-decoration:underline}
+
+/* === Main container === */
+main.container{
+  max-width:950px;
+  margin:-36px auto 64px;
+  background:var(--card);
+  border-radius:14px;
+  padding:28px;
+  box-shadow:0 10px 28px rgba(0,0,0,.08);
+}
+
+section{margin-bottom:22px}
+h2{
+  display:inline-block;
+  font-size:20px;
+  margin-bottom:10px;
+  font-weight:800;
+  border-bottom:2px solid var(--primary);
+  padding-bottom:4px;
+}
+
+.grid-2{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}
+.pill{
+  display:inline-block;
+  background:#eef2ff;
+  color:#1e3a8a;
+  padding:.28rem .6rem;
+  border-radius:999px;
+  font-size:.85rem;
+  margin:.2rem .3rem .2rem 0;
+}
+
+ul.clean{list-style:none}
+ul.clean li{
+  background:#f3f4f6;
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+  padding:12px 14px;
+  margin-bottom:8px;
+}
+.role{font-weight:700}
+.meta{color:var(--muted);font-size:.95rem}
+.bullet{margin-top:6px}
+.two-col{columns:2;column-gap:16px}
+.kbd{
+  font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
+  background:#f1f5f9;
+  border:1px solid #e2e8f0;
+  padding:1px 6px;
+  border-radius:6px;
+  font-size:.85em;
+}
+
+footer.footer{
+  text-align:center;
+  color:var(--muted);
+  padding:22px 0;
+}
+
+/* === Print version === */
+@media print{
+  .id-badge{position:absolute}
+  header.hero{background:#fff;color:#000;padding:20px 0}
+  header .contact a{color:#0b5fff;text-decoration:none}
+  main.container{box-shadow:none;margin:0;border:none}
+  a{text-decoration:none}
+  .two-col{columns:2}
+}

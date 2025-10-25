@@ -4,52 +4,134 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Chintsogt Enkhbaatar — Resume</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Resume of Chintsogt Enkhbaatar — Asia University CS student (Mongolia).">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Top-left ID, Name, Photo -->
+  <aside class="id-badge" aria-label="ID badge">
+    <img class="avatar" src="img/photo.jpg" alt="Photo of Chintsogt Enkhbaatar">
+    <div class="who">
+      <span class="name">Chintsogt Enkhbaatar</span>
+      <span class="sid">Student ID: <strong>STUDENT_ID_HERE</strong></span>
+    </div>
+  </aside>
+
   <header class="hero">
     <h1>Chintsogt Enkhbaatar</h1>
-    <p class="subtitle">Associate Professor • AI & Cloud • Taichung</p>
-    <p class="contact">Email: Chintsogt0825@gmail.com · GitHub: <a href="https://github.com/Chintsogt0825">Chintsogt0825</a></p>
+    <p class="subtitle">Computer Science Student • Asia University (Taichung) • From Mongolia</p>
+    <p class="contact">
+      Email: <a href="mailto:Chintsogt0825@gmail.com">Chintsogt0825@gmail.com</a> ·
+      GitHub: <a href="https://github.com/Chintsogt0825" rel="noopener">Chintsogt0825</a>
+    </p>
   </header>
 
-  <main class="container">
+  <main class="container" role="main">
     <section>
       <h2>Profile</h2>
-      <p>Motivated computer science student with hands-on experience in artificial intelligence, cloud computing, and data analysis. Skilled in Python, machine learning, and web development, with a strong interest in applying technology to solve real-world problems.</p>
+      <p>
+        Asia University computer science student from Mongolia with hands-on experience in
+        artificial intelligence, cloud, and data analysis. Comfortable building ML pipelines
+        in Python, shipping small web tools, and collaborating in Git/GitHub. Interested in
+        applying machine learning to healthcare and education.
+      </p>
+    </section>
+
+    <section class="grid-2">
+      <div>
+        <h2>Experience</h2>
+        <ul class="clean">
+          <li>
+            <div class="role">IT/AI Intern — MSM (Mongolia)</div>
+            <div class="meta">Ulaanbaatar · 2024</div>
+            <div class="bullet">
+              • Supported data collection/cleaning and exploratory analysis for internal dashboards.<br>
+              • Wrote Python utilities (<span class="kbd">pandas</span>, <span class="kbd">scikit-learn</span>) to automate reporting tasks.<br>
+              • Documented workflows in Git and contributed to team readmes/issues.
+            </div>
+          </li>
+          <li>
+            <div class="role">Volunteer — Tsoilogsoz (Mongolian Educational Events)</div>
+            <div class="meta">Community · 2023–2024</div>
+            <div class="bullet">
+              • Assisted with event logistics and AV setup.<br>
+              • Helped run coding mini-workshops for students.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Education</h2>
+        <ul class="clean">
+          <li>
+            <div class="role">Asia University — B.Sc. in Computer Science</div>
+            <div class="meta">Taichung, Taiwan · 2023–Present</div>
+            <div class="bullet">
+              Coursework: Machine Learning, Data Structures, Databases, Cloud Applications, Web Programming.
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section>
-      <h2>Education</h2>
-      <ul>
-        <li>Asia University — BSc</li>
+      <h2>Projects</h2>
+      <ul class="clean">
+        <li>
+          <div class="role">CVD Risk Prediction (ML)</div>
+          <div class="meta">Python · scikit-learn · model evaluation</div>
+          <div class="bullet">
+            Built and compared classifiers (Logistic Regression, Random Forest, Gradient Boosting) on an open
+            cardiovascular dataset; reported ROC/PR curves, confusion matrix, and calibration.
+          </div>
+        </li>
+        <li>
+          <div class="role">Monica AI — YouTube Project</div>
+          <div class="meta"><a href="#">Demo link</a></div>
+          <div class="bullet">
+            Lightweight web demo showcasing an assistant-style interface. Deployable on GitHub Pages.
+          </div>
+        </li>
+        <li>
+          <div class="role">Portfolio/Resume Site</div>
+          <div class="meta"><a href="https://github.com/Chintsogt0825">GitHub: Chintsogt0825</a></div>
+          <div class="bullet">
+            This site. Clean, print-ready, responsive resume with accessibility-friendly markup.
+          </div>
+        </li>
       </ul>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <article>
-        <h3>Associate Professor — Asia University</h3>
-        <p>Dates — Teaching Artificial Intelligence and Cloud Applications; research; projects.</p>
-      </article>
     </section>
 
     <section>
       <h2>Skills</h2>
-      <p>Python · ML · Git · Docker · Cloud · HTML/CSS</p>
+      <p>
+        <span class="pill">Python</span>
+        <span class="pill">Pandas</span>
+        <span class="pill">scikit-learn</span>
+        <span class="pill">Git & GitHub</span>
+        <span class="pill">Docker</span>
+        <span class="pill">Linux</span>
+        <span class="pill">HTML/CSS</span>
+        <span class="pill">Basic JS</span>
+        <span class="pill">Cloud (GCP/AWS basics)</span>
+        <span class="pill">Data Visualization</span>
+      </p>
     </section>
 
     <section>
-      <h2>Projects & Links</h2>
-      <ul>
-        <li><a href="#">Monica AI — YouTube project</a></li>
-        <li><a href="#">GitHub: github.com/yourusername</a></li>
-      </ul>
+      <h2>Selected Coursework & Activities</h2>
+      <div class="two-col">
+        • Machine Learning lab projects <br>
+        • Cloud Applications — containerization <br>
+        • Web Programming — responsive layouts <br>
+        • Hackathons/Meetups — volunteer staff & demo assistant
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    © <span id="year"></span> Chintsogt Enkhbaatar
+    © <span id="year"></span> Chintsogt Enkhbaatar · No phone/address/passport displayed
   </footer>
 
   <script>
