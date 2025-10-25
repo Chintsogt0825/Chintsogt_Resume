@@ -42,17 +42,16 @@ a:hover{text-decoration:underline}
 
 /* Circular photo above H1 */
 .avatar-circle {
-  width:90px;           /* smaller size */
-  height:90px;
-  border-radius:50%;
-  object-fit:cover;
+  width:85px;              /* smaller, balanced size */
+  height:85px;
+  border-radius:50%;       /* makes it a perfect circle */
+  object-fit:cover;        /* crops inside the circle neatly */
   display:block;
-  margin:0 auto 16px auto;
-
-  /* polished accent border */
-  border:3px solid var(--accent);
-  box-shadow:0 6px 20px rgba(2,8,23,.15);
+  margin:0 auto 14px auto; /* centers it above your name */
+  border:3px solid var(--accent); /* nice blue border */
+  box-shadow:0 4px 12px rgba(2,8,23,.15);
 }
+
 
 
 .hero h1{
