@@ -41,12 +41,19 @@ a:hover{text-decoration:underline}
 }
 
 /* Circular photo above H1 */
-.avatar-circle{
-  width:110px; height:110px; border-radius:50%;
+.avatar-circle {
+  width:90px;           /* smaller size */
+  height:90px;
+  border-radius:50%;
   object-fit:cover;
-  display:block; margin:0 auto 16px auto;
-  border:3px solid #fff; box-shadow:0 8px 24px rgba(2,8,23,.12);
+  display:block;
+  margin:0 auto 16px auto;
+
+  /* polished accent border */
+  border:3px solid var(--accent);
+  box-shadow:0 6px 20px rgba(2,8,23,.15);
 }
+
 
 .hero h1{
   font-size:32px; font-weight:800; letter-spacing:.2px;
