@@ -8,22 +8,30 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Top-left ID, Name, Photo -->
+  <!-- Top-left ID badge (required) -->
   <aside class="id-badge" aria-label="ID badge">
-    <img class="avatar" src="img/photo.jpg" alt="Photo of Chintsogt Enkhbaatar">
+    <img class="badge-avatar" src="img/photo.jpg" alt="Photo of Chintsogt Enkhbaatar">
     <div class="who">
-      <span class="name">Chintsogt Enkhbaatar</span>
-      <span class="sid">Student ID: <strong>113021194</strong></span>
+      <span class="sid-label">Student ID</span>
+      <span class="sid-value">113021194</span>
     </div>
   </aside>
 
   <header class="hero">
+    <!-- Circular photo above H1 -->
+    <img class="avatar-circle" src="img/photo.jpg" alt="Photo of Chintsogt Enkhbaatar">
+
     <h1>Chintsogt Enkhbaatar</h1>
-    <p class="subtitle">Computer Science Student • Asia University (Taichung) • From Mongolia</p>
-    <p class="contact">
-      Email: <a href="mailto:Chintsogt0825@gmail.com">Chintsogt0825@gmail.com</a> ·
-      GitHub: <a href="https://github.com/Chintsogt0825" rel="noopener">Chintsogt0825</a>
-    </p>
+    <p class="subtitle">Computer Science Student · Asia University (Taichung) · From Mongolia</p>
+
+    <nav class="contact">
+      <a class="link-btn" href="mailto:Chintsogt0825@gmail.com" aria-label="Email Chintsogt">
+        <span class="link-emoji" aria-hidden="true">✉️</span> Email
+      </a>
+      <a class="link-btn" href="https://github.com/Chintsogt0825" rel="noopener" aria-label="View GitHub profile">
+        <span class="link-emoji" aria-hidden="true">💻</span> GitHub
+      </a>
+    </nav>
   </header>
 
   <main class="container" role="main">
@@ -44,19 +52,19 @@
           <li>
             <div class="role">IT/AI Intern — MSM (Mongolia)</div>
             <div class="meta">Ulaanbaatar · 2024</div>
-            <div class="bullet">
-              • Supported data collection/cleaning and exploratory analysis for internal dashboards.<br>
-              • Wrote Python utilities (<span class="kbd">pandas</span>, <span class="kbd">scikit-learn</span>) to automate reporting tasks.<br>
-              • Documented workflows in Git and contributed to team readmes/issues.
-            </div>
+            <ul class="bullets">
+              <li>Supported data collection/cleaning and exploratory analysis for internal dashboards.</li>
+              <li>Wrote Python utilities (<span class="kbd">pandas</span>, <span class="kbd">scikit-learn</span>) to automate reporting tasks.</li>
+              <li>Documented workflows in Git and contributed to team readmes/issues.</li>
+            </ul>
           </li>
           <li>
             <div class="role">Volunteer — Tsoilogsoz (Mongolian Educational Events)</div>
             <div class="meta">Community · 2023–2024</div>
-            <div class="bullet">
-              • Assisted with event logistics and AV setup.<br>
-              • Helped run coding mini-workshops for students.
-            </div>
+            <ul class="bullets">
+              <li>Assisted with event logistics and AV setup; onboarded speakers and attendees.</li>
+              <li>Helped run coding mini-workshops and tech demos for students.</li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -67,9 +75,9 @@
           <li>
             <div class="role">Asia University — B.Sc. in Computer Science</div>
             <div class="meta">Taichung, Taiwan · 2023–Present</div>
-            <div class="bullet">
+            <p class="mini">
               Coursework: Machine Learning, Data Structures, Databases, Cloud Applications, Web Programming.
-            </div>
+            </p>
           </li>
         </ul>
       </div>
@@ -81,31 +89,31 @@
         <li>
           <div class="role">CVD Risk Prediction (ML)</div>
           <div class="meta">Python · scikit-learn · model evaluation</div>
-          <div class="bullet">
+          <p class="mini">
             Built and compared classifiers (Logistic Regression, Random Forest, Gradient Boosting) on an open
             cardiovascular dataset; reported ROC/PR curves, confusion matrix, and calibration.
-          </div>
+          </p>
         </li>
         <li>
           <div class="role">Monica AI — YouTube Project</div>
-          <div class="meta"><a href="#">Demo link</a></div>
-          <div class="bullet">
+          <div class="meta"><a class="inline-link" href="#">Demo link</a></div>
+          <p class="mini">
             Lightweight web demo showcasing an assistant-style interface. Deployable on GitHub Pages.
-          </div>
+          </p>
         </li>
         <li>
           <div class="role">Portfolio/Resume Site</div>
-          <div class="meta"><a href="https://github.com/Chintsogt0825">GitHub: Chintsogt0825</a></div>
-          <div class="bullet">
+          <div class="meta"><a class="inline-link" href="https://github.com/Chintsogt0825">GitHub: Chintsogt0825</a></div>
+          <p class="mini">
             This site. Clean, print-ready, responsive resume with accessibility-friendly markup.
-          </div>
+          </p>
         </li>
       </ul>
     </section>
 
     <section>
       <h2>Skills</h2>
-      <p>
+      <p class="tags">
         <span class="pill">Python</span>
         <span class="pill">Pandas</span>
         <span class="pill">scikit-learn</span>
@@ -114,19 +122,19 @@
         <span class="pill">Linux</span>
         <span class="pill">HTML/CSS</span>
         <span class="pill">Basic JS</span>
-        <span class="pill">Cloud (GCP/AWS basics)</span>
+        <span class="pill">Cloud (GCP/AWS)</span>
         <span class="pill">Data Visualization</span>
       </p>
     </section>
 
     <section>
       <h2>Selected Coursework & Activities</h2>
-      <div class="two-col">
-        • Machine Learning lab projects <br>
-        • Cloud Applications — containerization <br>
-        • Web Programming — responsive layouts <br>
-        • Hackathons/Meetups — volunteer staff & demo assistant
-      </div>
+      <ul class="bullets two-col">
+        <li>Machine Learning lab projects (classification, calibration, metrics)</li>
+        <li>Cloud Applications — containerization & simple deployments</li>
+        <li>Web Programming — responsive layouts, accessibility basics</li>
+        <li>Hackathons/Meetups — volunteer staff & demo assistant</li>
+      </ul>
     </section>
   </main>
 
